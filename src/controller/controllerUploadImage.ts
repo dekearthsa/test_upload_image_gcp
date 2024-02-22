@@ -7,7 +7,7 @@ require('dotenv').config({ path: path.resolve(__dirname, "../.env") });
 
 const storage = new Storage(
     {
-        projectId: "scg-iat-project-coretech",
+        projectId: process.env.PROJECT_ID,
         keyFilename: path.join(__dirname, "../../key.json"),
     }
 );
